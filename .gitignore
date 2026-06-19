@@ -1,0 +1,12 @@
+ignore
+ignore\
+ignore/
+
+# Временные файлы Office
+~$*.docm
+~$*.dotm
+~$*.docx
+
+# Локальные настройки VBA (если есть)
+*.frx
+*.vba.bak
