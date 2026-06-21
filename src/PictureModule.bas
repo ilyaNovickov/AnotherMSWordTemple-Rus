@@ -68,3 +68,4 @@ Private Sub MakeFigure()
     On Error GoTo 0
 
 End Sub
+'кракакатау

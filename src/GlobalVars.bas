@@ -7,3 +7,4 @@ Public Const PICTURE_CAPTION As String = "Рисунок"          'Подпись рисунка
 Public Const TABLE_TEXT_STYLE As String = "ТаблТекст"       ' Стиль для текста внутри таблицы
 Public Const TABLE_NAME_STYLE As String = "ТаблНазвание"    'Стиль для названия таблицы
 Public Const TABLE_CAPTION As String = "Таблица"            'Подпись таблицы
+'кракакатау
