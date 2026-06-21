@@ -121,7 +121,17 @@ Sub SplitTableForGost()
     End If
 
     Set tbl = Selection.Tables(1)
-    rowIdx = Selection.Cells(1).RowIndex
+    
+    ' Если выделено 0 ячеек, значит мы на маркере конца строки (тот самый кружок)
+    'If Selection.Cells.Count = 0 Then
+    '    ' Сдвигаем курсор влево, внутрь ячейки
+    '    Selection.MoveLeft Unit:=wdCharacter, Count:=1
+    'End If
+    
+    'rowIdx = Selection.Cells(1).RowIndex
+    ' Использование wdStartOfRangeRowNumber позволяет получить номер строки,
+    ' даже если курсор стоит на маркере конца строки (тот самый кружок)
+    rowIdx = Selection.Information(wdStartOfRangeRowNumber)
     
     ' Нельзя разбить по первой строке (шапке)
     If rowIdx = 1 Then
@@ -137,12 +147,13 @@ Sub SplitTableForGost()
 
     ' 1. Разделяем таблицу
     ' Вставляем разрыв страницы прямо перед выбранной строкой
+    Selection.SplitTable
     Selection.InsertBreak Type:=wdPageBreak
     
     ' 2. Вставляем текст между таблицами
     ' После разрыва страницы курсор обычно оказывается в новом абзаце перед второй частью таблицы
-    Selection.TypeParagraph ' Создаем дополнительный абзац, если нужно
-    Selection.MoveUp Unit:=wdLine, Count:=1
+    'Selection.TypeParagraph ' Создаем дополнительный абзац, если нужно
+    'Selection.MoveUp Unit:=wdLine, Count:=1
     
     ' Пишем текст
     Selection.TypeText "Продолжение таблицы "
