@@ -37,7 +37,7 @@ Private Sub MakeFigure()
     Dim PicCaption As String
     
     PicStyleName = PICTURE_STYLE
-    PicNameStyleName = PICTURE_NAME_STYLE
+    PicNameStyleName = PUCTURE_NAME_STYLE
     PicCaption = PICTURE_CAPTION
     
     ' 3. Вставляем рисунок
@@ -56,14 +56,15 @@ Private Sub MakeFigure()
     ' Центрируем абзац подписи перед применением стиля (надежная страховка)
     Selection.ParagraphFormat.Alignment = wdAlignParagraphCenter
     Selection.ParagraphFormat.FirstLineIndent = InchesToPoints(0)
-    ' Применяем стиль "Название" (Caption)
-    On Error Resume Next ' На случай если стиль называется иначе
-    Selection.Style = PicNameStyleName
-    On Error GoTo 0
-    
+        
     ' Если стиль не применился программно, вызываем стандартное окно,
     ' но абзац уже отцентрован, так что проблем не будет
     Selection.InsertCaption Label:=PicCaption, TitleAutoText:="InsertCaption", _
             Title:="", Position:=wdCaptionPositionBelow, ExcludeLabel:=0
+            
+    ' Применяем стиль "Название" (Caption)
+    On Error Resume Next ' На случай если стиль называется иначе
+    Selection.Style = PicNameStyleName
+    On Error GoTo 0
 
 End Sub
