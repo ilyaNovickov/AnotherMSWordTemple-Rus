@@ -1,10 +1,10 @@
 Attribute VB_Name = "GlobalVars"
-'Для Рисунков
-Public Const PICTURE_STYLE As String = "РисКонтейн"         'Стиль рисунка
-Public Const PUCTURE_NAME_STYLE As String = "РисНазвание"   'Стиль подписи рисунка
-Public Const PICTURE_CAPTION As String = "Рисунок"          'Подпись рисунка
-'Для таблиц
-Public Const TABLE_TEXT_STYLE As String = "ТаблТекст"       ' Стиль для текста внутри таблицы
-Public Const TABLE_NAME_STYLE As String = "ТаблНазвание"    'Стиль для названия таблицы
-Public Const TABLE_CAPTION As String = "Таблица"            'Подпись таблицы
-'кракакатау1
+'Р”Р»СЏ Р РёСЃСѓРЅРєРѕРІ
+Public Const PICTURE_STYLE As String = "Р РёСЃРљРѕРЅС‚РµР№РЅ"         'РЎС‚РёР»СЊ СЂРёСЃСѓРЅРєР°
+Public Const PUCTURE_NAME_STYLE As String = "Р РёСЃРќР°Р·РІР°РЅРёРµ"   'РЎС‚РёР»СЊ РїРѕРґРїРёСЃРё СЂРёСЃСѓРЅРєР°
+Public Const PICTURE_CAPTION As String = "Р РёСЃСѓРЅРѕРє"          'РџРѕРґРїРёСЃСЊ СЂРёСЃСѓРЅРєР°
+'Р”Р»СЏ С‚Р°Р±Р»РёС†
+Public Const TABLE_TEXT_STYLE As String = "РўР°Р±Р»РўРµРєСЃС‚"       ' РЎС‚РёР»СЊ РґР»СЏ С‚РµРєСЃС‚Р° РІРЅСѓС‚СЂРё С‚Р°Р±Р»РёС†С‹
+Public Const TABLE_NAME_STYLE As String = "РўР°Р±Р»РќР°Р·РІР°РЅРёРµ"    'РЎС‚РёР»СЊ РґР»СЏ РЅР°Р·РІР°РЅРёСЏ С‚Р°Р±Р»РёС†С‹
+Public Const TABLE_CAPTION As String = "РўР°Р±Р»РёС†Р°"            'РџРѕРґРїРёСЃСЊ С‚Р°Р±Р»РёС†С‹
+'РєСЂР°РєР°РєР°С‚Р°Сѓ1
