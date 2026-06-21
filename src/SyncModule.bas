@@ -1,6 +1,6 @@
 Attribute VB_Name = "SyncModule"
 Option Explicit
-'кракакатау
+'кракакатау1
 ' Процедура для экспорта всех компонентов VBA в папку /src
 Public Sub ExportVbaSourceFiles()
     Dim vbComp As VBIDE.VBComponent
